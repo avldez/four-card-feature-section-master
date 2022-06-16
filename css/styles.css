@@ -1,0 +1,122 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    --blue-shadow: hsl(213, 40%, 74%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    
+    color: var(--very-dark-blue);
+}
+
+main {
+    width: 80%;
+    background-color: var(--very-light-gray);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 900px;
+}
+
+.container {
+    padding-top: 60px;
+    max-width: 240px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 19px;
+}
+
+h1::first-line {
+    font-weight: 200;
+}
+
+.container > p {
+    color: var(--grayish-blue);
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.container .container-cards {
+    margin-top: 50px;
+}
+
+.container .container-cards .card {
+    border-radius: 4px;
+
+    margin-bottom: 25px;
+    
+    border-top-width: 3px;
+    border-top-style: solid;
+
+    box-shadow: 0px 15px 25px -12px var(--blue-shadow)
+}
+
+.container .container-cards .card:nth-child(1) {
+    border-top-color: var(--cyan);
+}
+
+.container .container-cards .card:nth-child(2) {
+    border-top-color: var(--red);
+}
+
+.container .container-cards .card:nth-child(3) {
+    border-top-color: var(--orange);
+}
+
+.container .container-cards .card:nth-child(4) {
+    border-top-color: var(--blue);
+}
+
+.container .container-cards .card .card-description {
+    padding: 15px 25px 20px 20px;
+}
+
+.container .container-cards .card .card-description h2 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.container .container-cards .card .card-description p {
+    font-size: 10px;
+    padding-top: 5px;
+    color: var(--grayish-blue);
+}
+
+.container .container-cards .card .card-image-container {
+    position: relative;
+
+    padding-bottom: 20px;
+
+    height: 60px;
+}
+
+.container .container-cards .card img {
+    position: absolute;
+
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+}
